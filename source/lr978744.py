@@ -1,4 +1,4 @@
-import pdb
+import ipdb
 import pandas as pd
 from sklearn.linear_model import LogisticRegression
 from sklearn.metrics import roc_auc_score
@@ -66,7 +66,7 @@ def main():
 
 if __name__ == "__main__":
 
-    pdb.set_trace()
+    ipdb.set_trace()
 
     print('Started')
     main()
