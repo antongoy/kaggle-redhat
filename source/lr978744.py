@@ -17,12 +17,12 @@ def LeaveOneOut(data1, data2, columnName, useLOO=False):
 
 
 def main():
-    directory = '../input/'
-    train = pd.read_csv(directory+'act_train.csv',
+    directory = '../data/'
+    train = pd.read_csv(directory+'act_train.csv.zip',
                         usecols=['people_id', 'outcome'])
-    test = pd.read_csv(directory+'act_test.csv',
+    test = pd.read_csv(directory+'act_test.csv.zip',
                        usecols=['activity_id', 'people_id'])
-    people = pd.read_csv(directory+'people.csv',
+    people = pd.read_csv(directory+'people.csv.zip',
                          usecols=['people_id',
                                   'group_1',
                                   'char_2',
