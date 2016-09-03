@@ -1,3 +1,4 @@
 data/
 submissions/
 source/.ipynb_checkpoints/
+source/__pycache__/
