@@ -47,3 +47,15 @@ def make_submission(predictions, path='submission.csv', index=None, name=None):
         index=True,
         header=True
     )
+
+
+def extract_year_month_day(
+    df, date_column_name,
+    year_column_name='year',
+    month_column_name='month',
+    day_column_name='day'
+):
+
+    df[year_column_name] = df[year_column_name].dt.year
+    df[month_column_name] = df[month_column_name].dt.month
+    df[day_column_name] = df[day_column_name].dt.day
